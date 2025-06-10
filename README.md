@@ -1,59 +1,53 @@
-# 🕷️ X3RX3S Parameter Finder
+# 🕷️ X3RX3S's Parameter Finder
 
 > A multithreaded, blazing-fast URL parameter discovery tool for recon ninjas.  
 > Built for speed, stealth, and sexy terminal vibes.  
-> Made by **X3RX3S** — use responsibly 💀
+> Made by **X3RX3S** — use non responsibly 💀
 
 ---
 
-## 🚀 What is this?
+## What is this?
 
-**X3RX3S Parameter Finder** is a CLI tool that crawls a website and identifies URLs containing common GET parameters. It uses threading for speed, optional user-agent rotation for stealth, supports proxies and cookies, and can output results in TXT, CSV, or JSON formats.
+**X3RX3S's Parameter Finder** is a CLI tool that crawls a website and identifies URLs containing common GET parameters. It uses threading for speed, optional user-agent rotation for stealth, supports proxies and cookies, and can output results in TXT, CSV, or JSON formats.
 
 This is for **bug bounty hunters**, **pentesters**, or anyone doing **web app recon** who wants to quickly gather parameterized URLs for fuzzing, testing, or exploitation.
 
 ---
 
-## 🎯 Features
+## Features
 
-- ✅ Multi-threaded crawling
-- ✅ Finds **40 (default)** or **100+ (supreme)** common parameters
-- ✅ Beautiful **colorful banner** with author credit
-- ✅ Terminal-friendly **light blue output**
-- ✅ Optional **User-Agent randomization**
-- ✅ **Proxy** support (`http`, `https`)
-- ✅ **Custom cookies** for authenticated crawling
-- ✅ **Crawl depth** control
-- ✅ Output in **TXT**, **CSV**, or **JSON**
-- ✅ **Progress bar** via `tqdm`
-- ✅ Clean, lean, and fast
+- > Multi-threaded crawling
+- > Finds **40 (default)** or **100+ (supreme)** common parameters
+- > Terminal-friendly **light blue output**
+- > Optional **User-Agent randomization**
+- > **Proxy** support (`http`, `https`)
+- > **Custom cookies** for authenticated crawling
+- > **Crawl depth** control
+- > Output in **TXT**, **CSV**, or **JSON**
+- > Clean, lean, and fast as fxck.
 
 ---
 
-## 📦 Installation
+## Installation
 
 Clone the repo and install dependencies:
 
 ```bash
-git clone https://github.com/YOURUSERNAME/x3rx3s-paramfinder.git
-cd x3rx3s-paramfinder
-pip install -r requirements.txt
+git clone https://github.com/X3RX3SSec/ParaFinder.git
+cd ParaFinder 
+pip install requests beautifulsoup4 tqdm
 ```
-
-> You only need:
-> - `requests`
-> - `beautifulsoup4`
-> - `tqdm`
 
 ---
 
-## 🛠️ Usage
+## Usage
 
 ```bash
-python parameter_finder.py <URL> [options]
+python3 parafinder.py -h
+python parafinder.py <URL> [options]
 ```
 
-### 🔧 Options
+### Options
 
 | Option                | Description                                                                 | Default       |
 |----------------------|-----------------------------------------------------------------------------|---------------|
@@ -68,30 +62,30 @@ python parameter_finder.py <URL> [options]
 
 ---
 
-## 🧪 Examples
+## Examples
 
 ### Crawl with defaults:
 
 ```bash
-python parameter_finder.py https://example.com
+python parafinder.py https://example.com
 ```
 
 ### Use supreme mode and random user-agent:
 
 ```bash
-python parameter_finder.py https://example.com --mode supreme --user-agent-random
+python parafinder.py https://example.com --mode supreme --user-agent-random
 ```
 
 ### Save to JSON file:
 
 ```bash
-python parameter_finder.py https://example.com --output-file out.json --output-format json
+python parafinder.py https://example.com --output-file out.json --output-format json
 ```
 
 ### Use proxy, cookies, and crawl depth 3:
 
 ```bash
-python parameter_finder.py https://target.com \
+python paramfinder.py https://target.com \
   --proxy http://127.0.0.1:8080 \
   --cookie "auth=token123" \
   --depth 3
@@ -99,7 +93,7 @@ python parameter_finder.py https://target.com \
 
 ---
 
-## 📤 Output
+## Output
 
 Results are printed in **light blue** in your terminal and can be saved as:
 
@@ -114,7 +108,7 @@ Each file will contain only the URLs where at least **one common parameter** was
 ## ⚠️ Legal Notice
 
 This tool is intended for **authorized testing, learning, and bug bounty** purposes only.  
-Do **NOT** use it on domains you don't own or have explicit permission to test.
+Do **NOT** use it on domains you don't own or have explicit permission to test. Not that anyone would listen to this 🤐
 
 You are responsible for your actions. I take no liability for misuse.
 
