@@ -44,7 +44,7 @@ pip install requests beautifulsoup4 tqdm
 
 ```bash
 python3 parafinder.py -h
-python parafinder.py <URL> [options]
+python3 parafinder.py <URL> [options]
 ```
 
 ### Options
@@ -67,25 +67,25 @@ python parafinder.py <URL> [options]
 ### Crawl with defaults:
 
 ```bash
-python parafinder.py https://example.com
+python3 parafinder.py https://example.com
 ```
 
 ### Use supreme mode and random user-agent:
 
 ```bash
-python parafinder.py https://example.com --mode supreme --user-agent-random
+python3 parafinder.py https://example.com --mode supreme --user-agent-random
 ```
 
 ### Save to JSON file:
 
 ```bash
-python parafinder.py https://example.com --output-file out.json --output-format json
+python3 parafinder.py https://example.com --output-file out.json --output-format json
 ```
 
 ### Use proxy, cookies, and crawl depth 3:
 
 ```bash
-python paramfinder.py https://target.com \
+python3 paramfinder.py https://target.com \
   --proxy http://127.0.0.1:8080 \
   --cookie "auth=token123" \
   --depth 3
@@ -128,6 +128,6 @@ You are responsible for your actions. I take no liability for misuse.
 **X3RX3S**
 
 Drop a ⭐ if this helped your recon flow.  
-PRs welcome if you wanna contribute!
+PRs welcome if you wanna contribute or simply Dm me on Instagram @mindfuckerrrr !
 
 ---
